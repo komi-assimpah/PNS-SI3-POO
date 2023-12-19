@@ -32,6 +32,7 @@ public class ChargingStation {
     }
 
     /**
+     * Q27
      * Connects a vehicle to a charging point and charges it to full.
      * @param vehicle the vehicle to charge
      * @return the amount of energy charged to the vehicle
@@ -46,6 +47,7 @@ public class ChargingStation {
     }
 
     /**
+     * Q30
      * disconnect a vehicle from a charging point
      * @param vehicle the vehicle to charge
      * @return the status the attempt
