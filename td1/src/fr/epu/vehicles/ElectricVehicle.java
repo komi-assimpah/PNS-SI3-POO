@@ -108,14 +108,17 @@ public class ElectricVehicle {
         return true;
     }
 
+    //Q40
     public int percentageCharge(){
         return (int) ((currentCharge/batteryCapacity)*100);
     }
 
+    //Q41
     public double distanceCanMoveWithCurrentCharge(){
         return currentCharge/ energyConsumptionPerKilometer;
     }
 
+    //Q42
     public double distanceCanMoveWithBatteryCapacityMax(){
         return this.batteryCapacity/ energyConsumptionPerKilometer;
     }
