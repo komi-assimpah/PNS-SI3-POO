@@ -4,7 +4,6 @@ public class ElectricVehicle {
     private double batteryCapacity;
     private double currentCharge;
     private double energyConsumptionPerKilometer;
-
     private static final double DEFAULT_ENERGY_CONSUMPTION_PER_KILOMETER=0.2;
 
     private boolean isConnected = false;
@@ -41,6 +40,7 @@ public class ElectricVehicle {
 
 
     /**
+     * Q7
      * Charge the battery with the given amount of energy.
      * @param chargeAmount
      * @return true if the battery was charged, false otherwise
@@ -59,13 +59,14 @@ public class ElectricVehicle {
     }
 
     /**
+     * Q8
      * Charge the battery to full capacity.
      * @return the amount of energy that was added to the battery
      */
     public double chargeToFull(){
-        double added = this.batteryCapacity-this.currentCharge;
-        charge(added);
-        return added;
+        double toCharged = this.batteryCapacity-this.currentCharge;
+        charge(toCharged);
+        return toCharged;
     }
 
     /**
@@ -107,18 +108,22 @@ public class ElectricVehicle {
         return true;
     }
 
+    //Q40
     public int percentageCharge(){
         return (int) ((currentCharge/batteryCapacity)*100);
     }
 
+    //Q41
     public double distanceCanMoveWithCurrentCharge(){
         return currentCharge/ energyConsumptionPerKilometer;
     }
 
+    //Q42
     public double distanceCanMoveWithBatteryCapacityMax(){
         return this.batteryCapacity/ energyConsumptionPerKilometer;
     }
 
+    //Q43
     public boolean drive(double distance){
         double energyNeededForDistance = distance* getEnergyConsumptionPerKilometer();
         if(energyNeededForDistance<=currentCharge){
