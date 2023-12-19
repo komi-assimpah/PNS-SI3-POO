@@ -123,6 +123,7 @@ public class ElectricVehicle {
         return this.batteryCapacity/ energyConsumptionPerKilometer;
     }
 
+    //Q43
     public boolean drive(double distance){
         double energyNeededForDistance = distance* getEnergyConsumptionPerKilometer();
         if(energyNeededForDistance<=currentCharge){
