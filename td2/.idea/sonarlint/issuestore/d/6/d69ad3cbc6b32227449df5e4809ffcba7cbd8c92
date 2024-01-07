@@ -1,0 +1,9 @@
+
+U
+java:S2589Ÿ"7Remove this expression which always evaluates to "true"(ç­Öó8Ï«’°Î1
+Z
+java:S2589"7Remove this expression which always evaluates to "true"(à÷î¿şÿÿÿÿ8Óó°Î1
+W	java:S125	"<This block of commented-out lines of code should be removed.(óúÖ8Öó°Î1
+X	java:S125+"<This block of commented-out lines of code should be removed.(¢µ‘8Øó°Î1
+G	java:S106\"+Replace this use of System.out by a logger.(£ƒà€8àó°Î1
+^	java:S125§"<This block of commented-out lines of code should be removed.(œÛàáûÿÿÿÿ8çó°Î1

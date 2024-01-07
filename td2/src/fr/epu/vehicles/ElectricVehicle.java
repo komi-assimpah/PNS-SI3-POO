@@ -45,7 +45,7 @@ public class ElectricVehicle {
      * @param chargeAmount
      * @return true if the battery was charged, false otherwise
      */
-    boolean charge(double chargeAmount){
+    public boolean charge(double chargeAmount){
         if(chargeAmount<=0){
             return false;
         }else {
@@ -115,7 +115,7 @@ public class ElectricVehicle {
 
     //Q41
     public double distanceCanMoveWithCurrentCharge(){
-        return currentCharge/ energyConsumptionPerKilometer;
+        return getCurrentCharge()/ getEnergyConsumptionPerKilometer();
     }
 
     //Q42

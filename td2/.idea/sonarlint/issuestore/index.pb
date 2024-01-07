@@ -23,3 +23,7 @@ T
 $src/fr/epu/vehicles/ElectricCar.java,b\e\bee53a5ec9fa6da722881098b5f972215ca81e27
 Y
 )test/fr/epu/vehicles/ElectricCarTest.java,6\3\635c8f19bc36106819fdd6047d4a5fcdcca32716
+U
+%src/fr/epu/fleets/VehicleService.java,d\6\d69ad3cbc6b32227449df5e4809ffcba7cbd8c92
+Z
+*test/fr/epu/fleets/VehicleServiceTest.java,0\e\0e67d470e0504287730f688aeeb6992c04514ba9
