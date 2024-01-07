@@ -2,6 +2,8 @@ package fr.epu.charging;
 
 import fr.epu.charging.ChargingStation;
 import fr.epu.charging.EnergyProvider;
+import fr.epu.vehicles.ElectricBike;
+import fr.epu.vehicles.ElectricCar;
 import fr.epu.vehicles.ElectricVehicle;
 import org.junit.jupiter.api.Test;
 
@@ -29,5 +31,40 @@ class ChargingStationTest {
         assertEquals(10, chargingStation.getAvailableChargingPoints());
     }
 
+    @Test
+    void testInheritance(){
+        ChargingStation chargingStation = new ChargingStation("Charging Station 1", 10);
+        ElectricVehicle ev = new ElectricVehicle(30);
+        double charge = chargingStation.connectToChargingPoint(ev);
+        assertEquals(ev.getBatteryCapacity(), ev.getCurrentCharge());
+
+        ElectricCar ec = new ElectricCar(30, "ABC123");
+        charge = chargingStation.connectToChargingPoint(ec);
+        assertEquals(ec.getBatteryCapacity(), ec.getCurrentCharge());
+
+        ElectricBike eb = new ElectricBike(30, new double[]{0.1,0.2,0.5});
+        charge = chargingStation.connectToChargingPoint(ec);
+        assertEquals(ec.getBatteryCapacity(), ec.getCurrentCharge());
+
+        ev = ec;
+        //Forbidden : ec = ev;
+        //Forbidden : ec = eb;
+    }
+
+    @Test
+    void testInheritanceSecondVersion(){
+        ChargingStation chargingStation = new ChargingStation("Charging Station 1", 10);
+        ElectricVehicle ev = new ElectricVehicle(30);
+        testIsFullCharged(chargingStation, ev);
+
+        ElectricCar ec = new ElectricCar(30, "ABC123");
+        testIsFullCharged(chargingStation, ec);
+        ElectricBike eb = new ElectricBike(30, new double[]{0.1,0.2,0.5});
+        testIsFullCharged(chargingStation, eb);
+    }
+    private static void testIsFullCharged(ChargingStation chargingStation, ElectricVehicle ev) {
+        double charge = chargingStation.connectToChargingPoint(ev);
+        assertEquals(ev.getBatteryCapacity(), ev.getCurrentCharge());
+    }
 
 }
