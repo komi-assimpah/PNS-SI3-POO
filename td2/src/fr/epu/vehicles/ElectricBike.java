@@ -12,6 +12,7 @@ public class ElectricBike extends ElectricVehicle {
         this.pedalAssitLevel = DEFAULT_PEDAL_ASSIST_LEVEL;
     }
 
+
     public int getNumberOfAvailableLevels(){
         return energyConsumptionLevels.length;
     }
@@ -27,7 +28,7 @@ public class ElectricBike extends ElectricVehicle {
         }else if (newAssitLevel<=0){
             this.pedalAssitLevel = 0;
         }else {
-            this.pedalAssitLevel = nbLevel;
+            this.pedalAssitLevel = newAssitLevel;
         }
     }
 

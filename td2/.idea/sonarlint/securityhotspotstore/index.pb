@@ -1,3 +1,21 @@
 
 ]
 -test/fr/epu/charging/ChargingStationTest.java,d\5\d5c660c90ed3331098e4f33236c106bceadb22bb
+D
+src/fr/epu/Main.java,3\f\3f9f95779f8b0b54308a6f4e3481f0edb420e1be
+X
+(src/fr/epu/charging/ChargingStation.java,e\a\ea214566b33602ba8a82b62794398822aa5501f3
+W
+'src/fr/epu/charging/EnergyProvider.java,6\f\6f7023d1a9b6e6875afa11aebba4e223e0e02487
+X
+(src/fr/epu/vehicles/ElectricVehicle.java,c\3\c3432c60e1eb65660c9701c88878478bfff4f3f4
+N
+src/fr/epu/vehicles/Drone.java,6\6\664651759780d8af7208c0dd1cbf012c83c1e783
+U
+%src/fr/epu/vehicles/ElectricBike.java,d\8\d84d49c1b7f8bc7d840fcba518476418d4f65c82
+]
+-test/fr/epu/vehicles/ElectricVehicleTest.java,e\e\eeaf1d9cd522ea576576ffda3f9509ec4e136574
+S
+#test/fr/epu/vehicles/DroneTest.java,4\4\445d13b710d3cc872f4e4ef242c81ea0651cbb4d
+Z
+*test/fr/epu/vehicles/ElectricBikeTest.java,6\c\6ced7474dfad1a4a1979bbd916f8e22d31395f20

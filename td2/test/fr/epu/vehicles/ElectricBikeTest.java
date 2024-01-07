@@ -28,8 +28,8 @@ class ElectricBikeTest {
         assertEquals(0.5, bike.getEnergyConsumptionForAssistLevel(1));
         assertEquals(0.8, bike.getEnergyConsumptionForAssistLevel(2));
 
-        /*assertEquals(150, bike.calculateMaxRange());
+        assertEquals(150, bike.distanceCanMoveWithBatteryCapacityMax());
         bike.setPedalAssistLevel(1);
-        assertEquals(1, bike.getPedalAssistLevel());*/
+        assertEquals(1, bike.getPedalAssistLevel());
     }
 }
