@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ElectricVehicleTest {
     ElectricVehicle ev;
+    double batteryCapacity = 30;
 
     @BeforeEach
     void setUp(){

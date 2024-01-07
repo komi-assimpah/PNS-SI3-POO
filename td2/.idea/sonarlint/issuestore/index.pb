@@ -19,3 +19,7 @@ S
 #test/fr/epu/vehicles/DroneTest.java,4\4\445d13b710d3cc872f4e4ef242c81ea0651cbb4d
 Z
 *test/fr/epu/vehicles/ElectricBikeTest.java,6\c\6ced7474dfad1a4a1979bbd916f8e22d31395f20
+T
+$src/fr/epu/vehicles/ElectricCar.java,b\e\bee53a5ec9fa6da722881098b5f972215ca81e27
+Y
+)test/fr/epu/vehicles/ElectricCarTest.java,6\3\635c8f19bc36106819fdd6047d4a5fcdcca32716

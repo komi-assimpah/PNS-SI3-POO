@@ -120,7 +120,7 @@ public class ElectricVehicle {
 
     //Q42
     public double distanceCanMoveWithBatteryCapacityMax(){
-        return this.batteryCapacity/ energyConsumptionPerKilometer;
+        return getBatteryCapacity() / getEnergyConsumptionPerKilometer();
     }
 
     //Q43
