@@ -5,8 +5,6 @@ X
 (src/fr/epu/charging/ChargingStation.java,e\a\ea214566b33602ba8a82b62794398822aa5501f3
 X
 (src/fr/epu/vehicles/ElectricVehicle.java,c\3\c3432c60e1eb65660c9701c88878478bfff4f3f4
-=
-src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
 ]
 -test/fr/epu/vehicles/ElectricVehicleTest.java,e\e\eeaf1d9cd522ea576576ffda3f9509ec4e136574
 W
