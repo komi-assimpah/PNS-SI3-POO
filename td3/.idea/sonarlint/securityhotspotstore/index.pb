@@ -9,8 +9,6 @@ U
 %src/fr/epu/vehicles/ElectricBike.java,d\8\d84d49c1b7f8bc7d840fcba518476418d4f65c82
 N
 src/fr/epu/rentals/Rental.java,b\b\bb0abc31fe81b03e4a111b1abe8b854d19d98012
-Y
-)test/fr/epu/rentals/RentalSystemTest.java,6\c\6cf56d4863bae6e9aba58576d9d6a04141b5ddf3
 T
 $src/fr/epu/rentals/RentableItem.java,6\f\6f43429598c54f1214335425a33715184c744ac7
 N
@@ -45,3 +43,9 @@ Q
 !src/fr/epu/tracking/Position.java,5\0\501f1d3a171fce2458d11e0ebd7297fb769da0e8
 W
 'src/fr/epu/tracking/TrackingSystem.java,1\4\144d21a4b806357fc625cca9cf203e800da3059d
+[
++test/fr/epu/fleets/FleetOfVehiclesTest.java,8\9\896c6d783597870632d5f154e39f2ba285a7623f
+Y
+)test/fr/epu/rentals/RentalSystemTest.java,6\c\6cf56d4863bae6e9aba58576d9d6a04141b5ddf3
+\
+,test/fr/epu/tracking/TrackingSystemTest.java,7\3\7394df14ec44c18f4cdb63a85f1eb43c83b5f3ec
