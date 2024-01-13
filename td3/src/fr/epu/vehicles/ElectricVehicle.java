@@ -137,4 +137,13 @@ public class ElectricVehicle implements ChargeableItem {
             return false;
         }
     }
+
+    @Override
+    public String toString() {
+        return "ElectricVehicle{" +
+                "batteryCapacity=" + batteryCapacity +
+                ", currentCharge=" + currentCharge +
+                ", defaultEnergyConsumptionPerKilometer=" + DEFAULT_ENERGY_CONSUMPTION_PER_KILOMETER +
+                '}';
+    }
 }

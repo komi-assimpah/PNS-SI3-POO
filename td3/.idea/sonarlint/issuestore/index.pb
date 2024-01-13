@@ -39,3 +39,9 @@ W
 'src/fr/epu/charging/EnergyProvider.java,6\f\6f7023d1a9b6e6875afa11aebba4e223e0e02487
 W
 'src/fr/epu/charging/ChargeableItem.java,5\c\5cdd095eff882a3e09ad5fbae50f3293c666e72b
+R
+"src/fr/epu/tracking/Trackable.java,3\1\31f610ac976545d2cd5b4f1cef0dff50a433e65b
+Q
+!src/fr/epu/tracking/Position.java,5\0\501f1d3a171fce2458d11e0ebd7297fb769da0e8
+W
+'src/fr/epu/tracking/TrackingSystem.java,1\4\144d21a4b806357fc625cca9cf203e800da3059d
