@@ -114,11 +114,13 @@ public class ElectricVehicle {
     }
 
     //Q41
+    //===calculateMaxDistance()
     public double distanceCanMoveWithCurrentCharge(){
         return getCurrentCharge()/ getEnergyConsumptionPerKilometer();
     }
 
     //Q42
+    // ==calculateMaxRange()
     public double distanceCanMoveWithBatteryCapacityMax(){
         return getBatteryCapacity() / getEnergyConsumptionPerKilometer();
     }

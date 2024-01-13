@@ -1,10 +1,14 @@
 package fr.epu.vehicles;
 
-public class ElectricCar extends ElectricVehicle{
+import fr.epu.rentals.RentableItem;
+
+public class ElectricCar extends ElectricVehicle implements RentableItem {
     private boolean coolingSystemActive;
     public static final double COOLING_SYSTEM_FACTOR = 1.2;
     private String licensePlate;
     private String model;
+    private boolean isAvailable;
+
 
 
     public ElectricCar(double batteryCapacity, String licensePlate, String model) {
@@ -12,6 +16,7 @@ public class ElectricCar extends ElectricVehicle{
         this.coolingSystemActive=false;
         this.licensePlate = licensePlate;
         this.model = model;
+        this.isAvailable=true;
 
     }
 
@@ -27,6 +32,12 @@ public class ElectricCar extends ElectricVehicle{
     public String getModel() {
         return model;
     }
+
+
+    public void setAvailable(boolean available) {
+        this.isAvailable = available;
+    }
+
 
     public boolean isOnCoolingSystem() {
         return coolingSystemActive;
@@ -61,6 +72,23 @@ public class ElectricCar extends ElectricVehicle{
         }
     }
 
+    /* ********** */
+    /* RentableItem    */
+    /* ********** */
+    @Override
+    public boolean isAvailable() {
+        return this.isAvailable;
+    }
+
+    @Override
+    public String getName() {
+        return getLicensePlate();
+    }
+
+    @Override
+    public boolean match(String description) {
+        return getModel().contains(description) || getLicensePlate().contains(description);
+    }
 
 
 }

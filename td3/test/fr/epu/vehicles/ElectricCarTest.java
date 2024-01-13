@@ -12,6 +12,8 @@ class ElectricCarTest extends ElectricVehicleTest {
     final String brand = "Tesla";
     final String model = "Model S";
 
+
+
     @Override
     @BeforeEach
     void setUp() {
@@ -89,6 +91,16 @@ class ElectricCarTest extends ElectricVehicleTest {
                 car.distanceCanMoveWithBatteryCapacityMax());
         car.turnOffCoolingSystem();
         assertEquals(150, car.distanceCanMoveWithBatteryCapacityMax());
+    }
+
+    @Test
+    void testMatch() {
+        car = new ElectricCar(batteryCapacity, licensePlate, brand + " " + model);
+        assertTrue(car.match("AB-123-CD"));
+        assertFalse(car.match("AB-123-CE"));
+        assertTrue(car.match("123"));
+        assertTrue(car.match("Tesla"));
+        assertTrue(car.match("S"));
     }
 
 
