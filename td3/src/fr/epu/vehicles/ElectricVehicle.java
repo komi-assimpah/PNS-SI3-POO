@@ -1,6 +1,8 @@
 package fr.epu.vehicles;
 
-public class ElectricVehicle {
+import fr.epu.charging.ChargeableItem;
+
+public class ElectricVehicle implements ChargeableItem {
     private double batteryCapacity;
     private double currentCharge;
     private double energyConsumptionPerKilometer;
@@ -84,7 +86,6 @@ public class ElectricVehicle {
      * the vehicle has been successfully connected this time
      */
 
-
     //teacher's method
     public boolean connect() {
         if (isConnected) {
@@ -100,6 +101,7 @@ public class ElectricVehicle {
      * @return false, if the vehicle was already disconnected, otherwise return true, if
      * the vehicle has been successfully disconnected this time
      */
+    @Override
     public boolean disConnect() {
         if (!isConnected) {
             return false;

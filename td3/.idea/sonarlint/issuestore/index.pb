@@ -33,3 +33,9 @@ U
 %src/fr/epu/fleets/VehicleService.java,d\6\d69ad3cbc6b32227449df5e4809ffcba7cbd8c92
 b
 2test/fr/epu/vehicles/VehiculeRentalSystemTest.java,7\3\73f29e0df3aaa575b4358dd61c880b2d1cdc7834
+X
+(src/fr/epu/charging/ChargingStation.java,e\a\ea214566b33602ba8a82b62794398822aa5501f3
+W
+'src/fr/epu/charging/EnergyProvider.java,6\f\6f7023d1a9b6e6875afa11aebba4e223e0e02487
+W
+'src/fr/epu/charging/ChargeableItem.java,5\c\5cdd095eff882a3e09ad5fbae50f3293c666e72b

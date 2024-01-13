@@ -1,8 +1,6 @@
 package fr.epu.charging;
 
-import fr.epu.vehicles.ElectricVehicle;
-
-public class ChargingStation {
+public class ChargingStation{
     private String stationName;
     private int availableChargingPoints;
     private EnergyProvider energyProvider;
@@ -37,7 +35,7 @@ public class ChargingStation {
      * @param vehicle the vehicle to charge
      * @return the amount of energy charged to the vehicle
      */
-    public double connectToChargingPoint(ElectricVehicle vehicle) {
+    public double connectToChargingPoint(ChargeableItem vehicle) {
         double chargeAdded=0;
         if(availableChargingPoints>0 && vehicle.connect()){
             this.availableChargingPoints--;
@@ -52,7 +50,7 @@ public class ChargingStation {
      * @param vehicle the vehicle to charge
      * @return the status the attempt
      */
-    public boolean disconnectFromChargingPoint(ElectricVehicle vehicle){
+    public boolean disconnectFromChargingPoint(ChargeableItem vehicle){
         if(vehicle.disConnect()){
             this.availableChargingPoints++;
             return true;
